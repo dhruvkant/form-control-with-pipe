@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<form [formGroup]="testFormGroup">
+	<input formControlName="testField" type="text" applyPipe/>
+</form>
+
+	<button (click)="fillValue()">Fill Value</button>
+	<button (click)="getValue()">Get Value</button>
